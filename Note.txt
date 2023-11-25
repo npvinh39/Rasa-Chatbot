@@ -1,0 +1,30 @@
+py -m rasa init
+or
+python -m rasa init
+
+_________________________________________
+
+Để tạo API endpoint trong Rasa, bạn cần chạy một máy chủ Rasa thông qua các lệnh trong command line. Đây là cách bạn có thể làm điều đó:
+
+1. **Khởi động máy chủ Rasa HTTP API:** Mở terminal và điều hướng đến thư mục chứa dự án Rasa của bạn.
+
+2. Sử dụng lệnh sau để khởi động máy chủ Rasa API:
+
+    ```
+    rasa run -m models --enable-api --cors "*" --debug
+    ```
+
+    - `-m models`: Đường dẫn đến thư mục chứa các mô hình Rasa.
+    - `--enable-api`: Bật API HTTP cho Rasa.
+    - `--cors "*"`: Cho phép tất cả các origin có thể gửi yêu cầu tới API (chỉ dùng cho môi trường phát triển, không nên sử dụng trong môi trường production).
+    - `--debug`: Bật chế độ debug (tùy chọn).
+
+3. Khi máy chủ được khởi động thành công, Rasa sẽ tạo ra các endpoint API mà bạn có thể giao tiếp với nó.
+
+    Ví dụ:
+    - Endpoint để gửi tin nhắn mới: `http://localhost:5005/webhooks/rest/webhook`
+    - Endpoint để lấy thông tin về các hành động: `http://localhost:5005/webhooks/rest`
+
+Bạn có thể gửi yêu cầu HTTP tới các endpoint này từ trang web của mình để tương tác với chatbot Rasa của bạn thông qua API. Lưu ý rằng URL có thể khác nhau tùy thuộc vào cổng và cấu hình bạn đã sử dụng khi khởi động máy chủ Rasa API.
+
+Đảm bảo rằng máy chủ Rasa API đang chạy khi bạn cố gắng kết nối từ trang web của mình.

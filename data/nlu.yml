@@ -1,0 +1,219 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào bạn
+    - hello
+    - hi
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - hello
+    - chào
+    - hi
+    - có ai ở đây không?
+    - ê
+    - có ai không?
+    - có ai ở đây không
+    - có ai ở đó không
+
+- intent: thank
+  examples: |
+    - cảm ơn
+    - cảm ơn bạn
+    - cảm ơn nhiều
+    - cảm ơn bạn nhiều
+    - cảm ơn bạn rất nhiều
+    - cảm ơn bạn rất nhiều nhé
+    - thanks
+    - thank
+    - thank you
+    - thank you very much
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - chào tạm biệt
+    - chào tạm biệt em
+    - tạm biệt em
+    - tạm biệt em nhé
+    - bái bai
+    - hẹn gặp lại
+    - hẹn gặp lại em
+    - hẹn gặp lại anh
+
+- intent: affirm
+  examples: |
+    - đúng rồi đó
+    - đúng vậy
+    - đúng
+    - đúng đấy
+    - đúng rồi đấy
+    - đúng vậy đấy
+    - chính xác
+    - chính xác rồi
+    - chính xác đấy
+    - chính xác luôn
+    - quá chính xác
+    - quá đúng
+    - quá đúng rồi
+    - quá đúng rồi đấy
+    - quá đúng rồi đó
+    - rất đúng
+    - rất đúng luôn
+    - rất đúng đấy
+    - rất đúng đó
+    - rất đúng vậy
+    - không sai
+    - không sai đâu được
+    - hoàn toàn đúng
+    - hoàn toàn đúng luôn
+
+
+- intent: deny
+  examples: |
+    - không
+    - không đâu
+    - không đâu nhé
+    - không đâu anh
+    - không đâu em
+    - không đâu chị
+    - không đâu cháu
+    - không đâu bạn
+    - không đâu bạn ơi
+    - không đâu anh ơi
+    - không đâu chị ơi
+    - không đâu cháu ơi
+    - không đâu em ơi
+    - không đâu bạn ơi
+    - không đúng
+    - không đúng đâu
+    - không đúng đâu nhé
+    - không đúng đâu anh
+    - không đúng đâu em
+    - không đúng đâu chị
+    - không đúng đâu cháu
+    - không đúng đâu bạn
+    - không đúng đâu bạn ơi
+    - sai rồi
+    - sai rồi nhé
+    - sai rồi đấy
+    - sai rồi đó
+    - có nhầm lẫn gì không
+    - có nhầm lẫn gì không nhỉ
+
+
+- intent: mood_great
+  examples: |
+    - tuyệt vời
+    - tốt
+    - tuyệt
+    - cảm thấy như vua
+    - tuyệt diệu
+    - Tôi cảm thấy rất tốt
+    - Tôi tuyệt vời
+    - Tôi tuyệt
+    - Tôi sẽ cứu thế giới
+    - rất phấn khích
+    - cực kỳ tốt
+    - rất hoàn hảo
+    - rất tốt
+    - rất hoàn mỹ
+
+- intent: mood_unhappy
+  examples: |
+    - ngày của tôi thật tồi tệ
+    - tôi buồn
+    - tôi không cảm thấy tốt
+    - tôi thất vọng
+    - rất buồn
+    - tôi buồn quá
+    - buồn
+    - rất buồn
+    - không vui
+    - không tốt
+    - không tốt lắm
+    - rất buồn
+    - quá buồn
+    - quá buồn
+
+- intent: ask_func_list
+  examples: |
+    - bạn có thể làm được những gì
+    - bạn giúp được gì nào
+    - chức năng của bạn là gì
+    - bạn có thể làm được mấy chức năng
+    - bạn giỏi nhất làm gì
+    - bạn có tư vấn giúp mình được không
+    - việc gì bạn làm được
+    - kể xem bạn làm được gì
+    - cho mình biết bạn làm được gì nhé
+    - bạn hữu dụng như thế nào
+    - bạn có ích trong những việc gì
+    - lĩnh vực gì bạn giỏi nhất
+    - mình tò mò về những việc bạn làm được
+    - chẳng biết bạn làm được gì
+    - bạn tệ nhất trong việc gì
+    - bạn biết được những lĩnh vực gì
+    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+    - kể cho mình biết những việc bạn có thể làm được nhé
+    - nói cho mình về những việc bạn giúp được mình
+    - bạn giúp được mình gì nào
+    - bạn có thể làm gì
+    - em giúp được gì
+    - em làm được gì
+    - mày biết làm gì
+    - em biết làm gì
+    - bạn biết làm gì
+    - biết làm gì
+    - làm được gì
+    - có làm được gì
+    - có làm được trò gì
+    - giúp giúp cái gì
+    - biết gì mà nói
+    - làm được gì
+    - giúp được gì
+    - mày làm được gì
+    - có biết gì
+
+- intent: ask_name
+  examples: |
+    - bạn tên gì
+    - tên gì
+    - chị tên gì
+    - anh tên gì
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - cho mình hỏi tên nhé
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh ạ
+    - cho em xin tên của chị ạ
+    - được biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+    - tên bạn trong tiếng việt là gì
+    - bạn có vui lòng cho mình biết tên được không
+    - chúng ta nên biết tên nhau nhỉ?
+    - em tên là gì thế
+    - tên em là gì
+    - tên em
+    - tên bạn
+    - bạn tên là gì
+    - bạn tên gì thế
+    - em tên gì
+
+- intent: bot_challenge
+  examples: |
+    - bạn có phải là một bot không?
+    - bạn có phải là người không?
+    - tôi đang nói chuyện với một bot phải không?
+    - tôi đang nói chuyện với một người phải không?

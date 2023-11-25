@@ -1,0 +1,76 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - ask_func_list
+  - ask_name
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Kính chào Quý khách!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Tôi có thể giúp gì cho quý khách nữa không?"
+
+  utter_func_list:
+  - text: "Em có thể làm được rất nhiều thứ. Nhưng giờ em chỉ chat thôi!"
+
+  utter_happy:
+  - text: "Tôi rất vui vì điều đó!"
+  - text: "Tôi rất vui vì điều đó. Có thể tôi có thể giúp gì thêm cho bạn?"
+
+  utter_mood_great:
+  - text: "Thật tuyệt, bạn vui làm tớ cũng vui"
+  - text: "Tôi rất vui vì điều đó!"
+
+  utter_mood_unhappy:
+  - text: "Tôi rất tiếc về điều đó. Có thể tôi có thể giúp gì cho bạn?"
+  - text: "Tôi cảm thấy rất tiếc về điều đó. Có thể tôi có thể giúp gì cho bạn?"
+
+  utter_goodbye:
+  - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
+  - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
+
+  utter_thank:
+  - text: "Cảm ơn quý khách quá khen ah!"
+  - text: "Dạ không có gì, đó là trách nhiệm của em mà!"
+
+  utter_affirm:
+  - text: "Tôi biết mà! Cảm ơn bạn đã xác nhận lại thông tin cho tôi!"
+  - text: "Cảm ơn bạn đã xác nhận lại thông tin cho tôi!"
+  - text: "Hihi, tôi biết mà!"
+  - text: "^^ Bạn thấy tôi hay không"
+  - text: "Hihi bạn quá khen rồi!"
+
+  utter_deny:
+  - text: "Uầy, tôi không biết nữa. Bạn có thể nói lại được không?"
+  - text: "Tôi không hiểu ý bạn lắm. Bạn có thể nói lại được không?"
+  - text: "Có lẽ kiến thức của tôi còn hạn hẹp quá. Bạn có thể nói rõ hơn không?"
+  - text: "Tôi chưa thu thập đủ thông tin. Bạn có thể nói rõ hơn không?"
+
+  utter_iamabot:
+  - text: "Tôi là một trợ lý ảo của Website này. Có nickname là Chatbot xinh đẹp thông minh giỏi giang nhất vũ trụ ạ! Tôi có thể giúp gì cho quý khách?"
+  - text: "Tôi là một trợ lý ảo của Website này. Tôi có thể giúp gì cho quý khách?"
+  - text: "Tôi là một chatbot chuyên trợ giúp các vấn đề liên quan đến website này. Tôi có thể giúp gì cho quý khách?"
+
+  utter_bot_challenge:
+  - text: "Tôi là một trợ lý ảo của Website này. Tôi có thể giúp gì cho quý khách?"
+  - text: "Tôi là một chatbot chuyên trợ giúp các vấn đề liên quan đến website này. Tôi có thể giúp gì cho quý khách?"
+
+  utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

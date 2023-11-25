@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Nói xin chào khi người dùng nói xin chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Nói tạm biệt bát cứ khi người dùng nói tạm biệt
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Nói tôi là chatbot khi người dùng hỏi bạn là ai
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Nói cảm ơn khi người dùng nói cảm ơn
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Phản hồi mặc định
+  steps:
+  - intent: nlu_fallback
+  - action: utter_unclear
+
+- rule: Xử lý Yêu cầu Tên
+  steps:
+  - intent: ask_name
+  - action: utter_iamabot
